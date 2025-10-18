@@ -143,7 +143,7 @@ const Home = () => {
                     Business-Forward
                   </AccordionTrigger>
                   <AccordionContent className="text-black">
-                    Creating profitable, scalable ventures that drive both innovation and sustainable business growth.
+                    How can AI agents drive real-time governance, compliance, and regulatory transformation for enterprises?
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -180,43 +180,43 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 rounded-2xl relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 rounded-2xl relative h-[500px] flex flex-col">
               <h3 className="text-3xl font-bold text-black mb-4">validate</h3>
-              <p className="text-black mb-8">
+              <p className="text-black mb-8 flex-grow">
                 Deep, systematic research and experimentation to validate both the problem in the market and the solution.
               </p>
-              <div className="flex items-center justify-center mt-8">
-                <img 
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944fc06b54b45a6d8640c_icons-01-240424.gif" 
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944fc06b54b45a6d8640c_icons-01-240424.gif"
                   alt="Validate"
                   className="w-32 h-32 object-contain"
                 />
               </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#6FCBD5] to-[#A8E5EC] p-8 rounded-2xl relative">
+            <div className="bg-gradient-to-b from-[#6FCBD5] to-[#A8E5EC] p-8 rounded-2xl relative h-[450px] flex flex-col">
               <h3 className="text-3xl font-bold text-black mb-4">build</h3>
-              <p className="text-black mb-8">
+              <p className="text-black mb-8 flex-grow">
                 Full-stack team building each component of a Venture alongside founders.
               </p>
-              <div className="flex items-center justify-center mt-8">
-                <img 
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff7cb9dd5f2944e3b1_icons-02-240424.gif" 
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff7cb9dd5f2944e3b1_icons-02-240424.gif"
                   alt="Build"
-                  className="w-32 h-32 object-contain"
+                  className="w-40 h-40 object-contain"
                 />
               </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 rounded-2xl relative">
+            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 rounded-2xl relative h-[500px] flex flex-col">
               <h3 className="text-3xl font-bold text-black mb-4">scale</h3>
-              <p className="text-black mb-8">
+              <p className="text-black mb-8 flex-grow">
                 Accelerating growth through GTM, partnerships, strategy and funding.
               </p>
-              <div className="flex items-center justify-center mt-8">
-                <img 
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff97e186ef92ac69e4_icons-03-240424.gif" 
+              <div className="flex items-center justify-center">
+                <img
+                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff97e186ef92ac69e4_icons-03-240424.gif"
                   alt="Scale"
                   className="w-32 h-32 object-contain"
                 />
