@@ -23,7 +23,7 @@ const Studio = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-b from-[#6ca1e3] to-[#6fcbd6]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-b from-[#4c73ec] via-[#4c73ec] to-[#6ba8e5]">
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -46,7 +46,7 @@ const Studio = () => {
       </section>
 
       {/* Our Studio Model */}
-      <section className="py-20 bg-gradient-to-b from-[#6fcbd6] to-[#A8E5EC]">
+      <section className="py-20 bg-gradient-to-b from-[#6ba8e5] via-[#7ed2dc] to-[#A8E5EC]">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto mb-12 text-center">
             <h2 className="text-5xl md:text-6xl font-bold text-black mb-6">
