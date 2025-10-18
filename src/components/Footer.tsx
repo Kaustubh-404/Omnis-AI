@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-12">
@@ -14,14 +16,14 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/studio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/studio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Studio
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/team" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/team" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Team
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -49,12 +51,12 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold text-foreground mb-4">Get Started</h4>
-            <a
-              href="/build-with-us"
+            <Link
+              to="/build-with-us"
               className="inline-block text-sm text-primary hover:underline"
             >
               Build With Us →
-            </a>
+            </Link>
           </div>
         </div>
 
