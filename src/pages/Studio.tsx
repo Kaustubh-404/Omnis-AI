@@ -30,7 +30,7 @@ const Studio = () => {
               <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 From Idea to Population-Scale Company
               </h1>
-              <p className="text-xl text-white leading-relaxed">
+              <p className="text-2xl text-white leading-relaxed">
                 At Omnis Studio, we don't just advise founders — we co-create with them. Our AI-first blockchain venture studio is designed to turn bold ideas into transformative companies. We merge deep tech, funding, and execution expertise into one seamless framework that accelerates founders from concept to scale.
               </p>
             </div>
@@ -52,10 +52,10 @@ const Studio = () => {
             <h2 className="text-5xl md:text-6xl font-bold text-black mb-6">
               Our Studio Model
             </h2>
-            <p className="text-xl text-black mb-4">
+            <p className="text-2xl text-black mb-4">
               Unlike accelerators or incubators, Omnis embeds itself as an institutional co-founder.
             </p>
-            <p className="text-xl text-black">
+            <p className="text-2xl text-black">
               We provide:
             </p>
           </div>
@@ -67,7 +67,7 @@ const Studio = () => {
             </div>
 
             <div className="border-t border-b border-black/20 py-6 flex items-center gap-4">
-              <p className="text-black flex-1">early funding and financial strategy from day one.</p>
+              <p className="text-black text-2xl flex-1">early funding and financial strategy from day one.</p>
               <img src={embeddedCapitalText} alt="" className="w-12 h-12" />
             </div>
 
@@ -77,7 +77,7 @@ const Studio = () => {
             </div>
 
             <div className="border-t border-b border-black/20 py-6 flex items-center gap-4">
-              <p className="text-black flex-1">powered by Zynd, our decentralized agent protocol.</p>
+              <p className="text-black text-2xl flex-1">powered by Zynd, our decentralized agent protocol.</p>
               <img src={aiFirstText} alt="" className="w-12 h-12" />
             </div>
 
@@ -87,7 +87,7 @@ const Studio = () => {
             </div>
 
             <div className="border-t border-b border-black/20 py-6 flex items-center gap-4">
-              <p className="text-black flex-1">a team that builds product, tech, and growth systems with you.</p>
+              <p className="text-black text-2xl flex-1">a team that builds product, tech, and growth systems with you.</p>
               <img src={operationalDepthText} alt="" className="w-12 h-12" />
             </div>
 
@@ -97,13 +97,13 @@ const Studio = () => {
             </div>
 
             <div className="border-t border-b border-black/20 py-6 flex items-center gap-4">
-              <p className="text-black flex-1">access to AI, blockchain, robotics, and capital ecosystems.</p>
+              <p className="text-black  text-2xl flex-1">access to AI, blockchain, robotics, and capital ecosystems.</p>
               <img src={globalNetworkText} alt="" className="w-12 h-12" />
             </div>
           </div>
 
           <div className="max-w-2xl mx-auto mt-12 border-t border-b border-black/30 py-8">
-            <p className="text-lg text-black text-center">
+            <p className="text-2xl text-black text-center">
               This means founders don't just gain advice—they gain a co-founding engine that builds alongside them.
             </p>
           </div>
@@ -118,7 +118,7 @@ const Studio = () => {
               <h2 className="text-5xl md:text-6xl font-bold text-black mb-6">
                 Our Belief
               </h2>
-              <p className="text-xl text-black leading-relaxed">
+              <p className="text-2xl text-black leading-relaxed">
                 We believe the future will be built by AI-powered, blockchain-native ventures that are inclusive, sustainable, and scalable. Omnis Studio exists to co-create those companies with courageous founders.
               </p>
             </div>
@@ -140,44 +140,44 @@ const Studio = () => {
           <div className="max-w-5xl mx-auto">
             <Accordion type="single" collapsible className="w-full space-y-4">
               <AccordionItem value="what-we-build" className="border-t border-b border-black/30 py-4">
-                <AccordionTrigger className="text-4xl font-bold text-black hover:no-underline">
+                <AccordionTrigger className="text-5xl font-bold text-black hover:no-underline">
                   What We Build
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 border border-black/20 p-8 rounded-lg">
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">AI-Native Enterprises</h4>
-                      <p className="text-black">rethinking governance, compliance, and scale with autonomous agents.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">AI-Native Enterprises</h4>
+                      <p className="text-black text-2xl">rethinking governance, compliance, and scale with autonomous agents.</p>
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">DEPIN & Robotics</h4>
-                      <p className="text-black">building decentralized physical infrastructure and robotics-driven ecosystems.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">DEPIN & Robotics</h4>
+                      <p className="text-black text-2xl">building decentralized physical infrastructure and robotics-driven ecosystems.</p>
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">Planet & People Ventures</h4>
-                      <p className="text-black">tackling sustainability, climate, and health equity with AI-first models.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">Planet & People Ventures</h4>
+                      <p className="text-black text-2xl">tackling sustainability, climate, and health equity with AI-first models.</p>
                     </div>
                   </div>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="omnis-advantage" className="border-t border-b border-black/30 py-4">
-                <AccordionTrigger className="text-4xl font-bold text-black hover:no-underline">
+                <AccordionTrigger className="text-5xl font-bold text-black hover:no-underline">
                   The Omnis Studio Advantage
                 </AccordionTrigger>
                 <AccordionContent>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 border border-black/20 p-8 rounded-lg">
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">Speed</h4>
-                      <p className="text-black">Move from concept to company in months, not years.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">Speed</h4>
+                      <p className="text-black text-2xl">Move from concept to company in months, not years.</p>
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">Resilience</h4>
-                      <p className="text-black">Validate markets and business models with data-driven clarity.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">Resilience</h4>
+                      <p className="text-black text-2xl">Validate markets and business models with data-driven clarity.</p>
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-black mb-3">Scale</h4>
-                      <p className="text-black">Leverage Zynd and our networks to grow ventures that reach billions.</p>
+                      <h4 className="text-3xl font-bold text-black mb-3">Scale</h4>
+                      <p className="text-black text-2xl">Leverage Zynd and our networks to grow ventures that reach billions.</p>
                     </div>
                   </div>
                 </AccordionContent>

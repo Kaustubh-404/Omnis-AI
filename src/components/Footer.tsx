@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Linkedin, Twitter, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -30,23 +31,17 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
+            <div className="flex gap-4">
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Linkedin size={24} />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Twitter size={24} />
+              </a>
+              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail size={24} />
+              </a>
+            </div>
           </div>
 
           <div>
