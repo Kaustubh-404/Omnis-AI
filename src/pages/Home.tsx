@@ -220,6 +220,134 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section className="py-12 overflow-hidden relative bg-gradient-to-b from-[#6FCBD5] to-[#A8E5EC]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#6FCBD5]/50 to-[#A8E5EC]/50 backdrop-blur-sm"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <h2 className="text-4xl underline font-bold text-black text-center mb-8">Our Partners</h2>
+          <div className="relative">
+            <div className="flex animate-scroll">
+              <div className="flex space-x-20 px-8">
+                {/* Zynd */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                    Zynd
+                  </div>
+                </div>
+
+                {/* Verusa */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://www.verusa.ai" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/verusa.svg"
+                      alt="Verusa"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* Aion Assure */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                    Aion Assure
+                  </div>
+                </div>
+
+                {/* Sunicon */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://sunicon.vc/" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/sunicon.avif"
+                      alt="Sunicon"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* Dhiway */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://dhiway.com/" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/dhiway.png"
+                      alt="Dhiway"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* NANDA - MIT */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://nanda.media.mit.edu/" target="_blank" rel="noopener noreferrer">
+                    <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                      NANDA-MIT
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              {/* Duplicate for seamless loop */}
+              <div className="flex space-x-20 px-8">
+                {/* Zynd */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                    Zynd
+                  </div>
+                </div>
+
+                {/* Verusa */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://www.verusa.ai" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/verusa.svg"
+                      alt="Verusa"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* Aion Assure */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                    Aion Assure
+                  </div>
+                </div>
+
+                {/* Sunicon */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://sunicon.vc/" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/sunicon.avif"
+                      alt="Sunicon"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* Dhiway */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://dhiway.com/" target="_blank" rel="noopener noreferrer" className="w-full h-full flex items-center justify-center">
+                    <img
+                      src="/dhiway.png"
+                      alt="Dhiway"
+                      className="w-40 h-20 object-contain"
+                    />
+                  </a>
+                </div>
+
+                {/* NANDA - MIT */}
+                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
+                  <a href="https://nanda.media.mit.edu/" target="_blank" rel="noopener noreferrer">
+                    <div className="text-3xl font-bold text-black" style={{ fontFamily: 'Georgia, serif' }}>
+                      NANDA
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

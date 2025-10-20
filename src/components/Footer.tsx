@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Mail } from "lucide-react";
+import omnisLogo from "@/assets/omnis-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">OMNIS</h3>
+            <Link to="/" className="inline-block mb-4">
+              <img src={omnisLogo} alt="OMNIS" className="h-12" />
+            </Link>
             <p className="text-sm text-muted-foreground">
               An AI-First Blockchain Venture Studio
             </p>
