@@ -19,7 +19,7 @@ const Team = () => {
     {
       name: "Aditya Berry",
       role: "Strategy and GTM",
-      image: "/aditya.jpeg",
+      image: "/aditya.jpg",
       description: "Meet Srinivas, our co-founder, leading Strategy and Go-to-Market at Biome. With over three decades of experience from across geographies, Srini is the Co-Founder of T-Hub Hyderabad (Asia's largest Innovation campus), India President for the Global Entrepreneurship Network, a Board Member of GEN Space, and the South Asia Advisory Board for the Dalai Lama Center for Ethics at MIT.",
       drives: "Srini's true passion lies in building robust, resilient venture ecosystems, helping startups scale and building thriving communities around entrepreneurship.",
       helps: ["Product Strategy", "Product Management", "Business Development", "Go-to-Market Strategy"],
@@ -27,7 +27,7 @@ const Team = () => {
     {
       name: "Prathamesh Mukutre",
       role: "Research & Finance",
-      image: "/prathamesh.jpeg",
+      image: "/prathamesh.jpg",
       description: "Arunabh brings experience in finance and valuations, complemented by strategic exposure in the MD's Office at ONDC - one of the key pillars of India's Digital Public Infrastructure (DPI) ecosystem.",
       drives: "Arunabh is passionate about building solutions on the foundational rails of Digital Public Infrastructure (DPI). He firmly believes in its potential to unlock unprecedented innovation and deliver meaningful impact.",
       helps: ["Research & Analysis for Ideation", "Validation", "Financial Modelling"],
@@ -43,15 +43,15 @@ const Team = () => {
     {
       name: "Chandan Kumar",
       role: "Product and Validation",
-      image: "/chandan.jpeg",
+      image: "/chandan.jpg",
       description: "Kaustubh heads Product and Validation at Biome. With over two decades of experience in building and scaling tech products and teams, he is the founder of The ProdZen - a product and strategy consulting company.",
       drives: "Kaustubh enjoys creating products from just an idea or improving existing products and scaling the business.",
       helps: ["Product and Validation", "Business Model Validation"],
     },
     {
-      name: "Swappi Shinde",
+      name: "Swapnil Shinde",
       role: "Growth and Capital",
-      image: "/swapnil.jpeg",
+      image: "/swapnil.jpg",
       description: "Leading Growth and Capital at Biome, Zaran has 8 years of experience in Venture Building and Venture Capital across India and South East Asia.",
       drives: "Zaran doubles up as a sounding board and shadow boxing partner for ideas on how to scale the business, position the product, raise funds, and navigate challenges on the startup journey.",
       helps: ["Fundraising", "Pitching", "Closing customers"],
@@ -59,7 +59,7 @@ const Team = () => {
     {
       name: "Suresh Jain",
       role: "Operations & Admin",
-      image: "/suresh.jpeg",
+      image: "/suresh.png",
       description: "Khaja leads the Admin Department at Biome, and has 9 years of experience in coordinating and expediting the flow of work. His experience covers IT recruitment, HR, and Admin operations.",
       drives: "Khaja is dedicated to ensuring smooth and efficient operations, and is driven by a passion for administrative excellence and continuous improvement.",
       helps: ["Operational excellence and effective administration"],
@@ -87,7 +87,7 @@ const Team = () => {
         }}
       >
         {/* Hero Section */}
-        <div className="relative min-h-screen flex items-center justify-start">
+        <div className="relative min-h-[80vh] flex items-center justify-start">
           {/* Background GIF Overlay */}
           <div
             className="absolute inset-0 opacity-30"
@@ -102,12 +102,12 @@ const Team = () => {
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-4xl">
               <h1
-                className="text-white font-bold mb-8 leading-none"
-                style={{ fontSize: '100px', lineHeight: '0.9' }}
+                className="text-white font-bold mb-6 leading-none"
+                style={{ fontSize: '90px', lineHeight: '0.9' }}
               >
                 The Omnis<br />Founding Collective
               </h1>
-              <p className="text-white text-xl max-w-3xl leading-relaxed">
+              <p className="text-white text-lg max-w-3xl leading-relaxed">
                 At Omnis, we believe world-changing ventures are built by diverse minds working as one. Our founding collective brings together finance leaders, product innovators, ecosystem builders, and capital experts—a team that acts as institutional co-founders for every venture we create.
               </p>
             </div>
@@ -115,14 +115,14 @@ const Team = () => {
         </div>
 
         {/* Team Section - Continuous with hero */}
-        <div className="py-20 relative">
+        <div className="py-12 relative">
         <div className="container mx-auto px-6">
           {/* First row - 4 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-6">
             {teamMembers.slice(0, 4).map((member, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className={`${index % 2 === 1 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
                 onClick={() => setSelectedMember(member)}
               >
                 {/* Avatar section */}
@@ -140,8 +140,8 @@ const Team = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
                   <p className="text-sm font-medium text-gray-600">
@@ -153,19 +153,19 @@ const Team = () => {
           </div>
 
           {/* Second row - 4 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {teamMembers.slice(4, 8).map((member, index) => (
               <div
                 key={index + 4}
-                className="group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                className={`${index % 2 === 0 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
                 onClick={() => setSelectedMember(member)}
               >
                 {/* Avatar section */}
-                <div className="h-48 bg-gradient-to-br from-orange-300 via-pink-300 to-red-300 relative flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-white relative flex items-center justify-center overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
 
                   {/* Plus icon */}
@@ -175,8 +175,8 @@ const Team = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">
                     {member.name}
                   </h3>
                   <p className="text-sm font-medium text-gray-600">

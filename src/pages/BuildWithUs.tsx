@@ -9,8 +9,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const BuildWithUs = () => {
   const { toast } = useToast();
-  const [whoWeWorkWithOpen, setWhoWeWorkWithOpen] = useState(false);
-  const [ourProcessOpen, setOurProcessOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -34,13 +33,25 @@ const BuildWithUs = () => {
       description: "We'll get back to you within 48 hours.",
     });
     setFormData({
-      firstName: "", lastName: "", linkedin: "", email: "", phone: "",
-      city: "", country: "", ideaName: "", ideaStage: "", ideaDescription: "",
-      teamDescription: "", additionalInfo: "", documentLink: ""
+      firstName: "",
+      lastName: "",
+      linkedin: "",
+      email: "",
+      phone: "",
+      city: "",
+      country: "",
+      ideaName: "",
+      ideaStage: "",
+      ideaDescription: "",
+      teamDescription: "",
+      additionalInfo: "",
+      documentLink: "",
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -55,24 +66,31 @@ const BuildWithUs = () => {
       <div
         className="relative"
         style={{
-          background: 'linear-gradient(180deg, #4B6FFF 0%, #8FA7FF 50%, #87CEEB 60%, #40E0D0 70%, #FFB347 85%, #FF7F7F 100%)',
-          minHeight: '100vh'
+          background:
+            "linear-gradient(180deg, #4B6FFF 0%, #8FA7FF 50%, #87CEEB 60%, #40E0D0 70%, #FFB347 85%, #FF7F7F 100%)",
+          minHeight: "100vh",
         }}
       >
         {/* Hero Section */}
-        <div className="relative min-h-screen flex items-center">
+        <div className="relative min-h-[60vh] flex items-center">
           <div className="container mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               {/* Left Content */}
               <div className="max-w-2xl">
                 <h1
-                  className="text-white font-bold mb-8 leading-none"
-                  style={{ fontSize: '90px', lineHeight: '0.99' }}
+                  className="text-white font-bold mb-6 leading-none"
+                  style={{ fontSize: "80px", lineHeight: "0.99" }}
                 >
-                  Build With<br />Omnis
+                  Build With
+                  <br />
+                  Omnis
                 </h1>
-                <p className="text-white text-xl leading-relaxed max-w-2xl">
-                  We partner with bold entrepreneurs who see the world differently and want to solve real problems with AI, blockchain, and robotics. Whether you're starting with a spark or scaling an early concept, Omnis is your institutional co-founder.
+                <p className="text-white text-lg leading-relaxed max-w-2xl">
+                  We partner with bold entrepreneurs who see the world
+                  differently and want to solve real problems with AI,
+                  blockchain, and robotics. Whether you're starting with a spark
+                  or scaling an early concept, Omnis is your institutional
+                  co-founder.
                 </p>
               </div>
 
@@ -93,59 +111,65 @@ const BuildWithUs = () => {
           </div>
         </div>
 
-        {/* Who We Work With Accordion Section */}
-        <div className="py-20">
+        {/* Who We Work With Section */}
+        <div className="pt-4 pb-8">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6 flex flex-col">
                 <button
-                  onClick={() => setWhoWeWorkWithOpen(!whoWeWorkWithOpen)}
-                  className="w-full flex items-center justify-between text-left"
+                  onClick={() => setFormOpen(!formOpen)}
+                  className="w-full flex items-start justify-between text-left"
                 >
-                  <h2 className="text-4xl font-bold text-gray-900">
-                    Who We Work With
-                  </h2>
-                  {whoWeWorkWithOpen ? (
-                    <ChevronUp className="w-8 h-8 text-gray-900" />
-                  ) : (
-                    <ChevronDown className="w-8 h-8 text-gray-900" />
-                  )}
-                </button>
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-900 mb-3">
+                      Who We Work With
+                    </h2>
 
-                {whoWeWorkWithOpen && (
-                  <div className="mt-8">
-                    <p className="text-lg text-gray-700 mb-6">
+                    <p className="text-base text-gray-700 mb-2">
                       We clearly define our ideal partners:
                     </p>
-                    <div className="space-y-4 text-gray-800 mb-8">
+                    <div className="space-y-1 text-gray-800 mb-4">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 flex-shrink-0"></div>
                         <p className="text-lg text-gray-800">
-                          <strong>Visionaries</strong> solving planet, people, and enterprise-scale challenges.
+                          <strong>Visionaries</strong> solving planet, people,
+                          and enterprise-scale challenges.
                         </p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 flex-shrink-0"></div>
                         <p className="text-lg text-gray-800">
-                          <strong>Founders</strong> who embrace risk, resilience, and rapid execution.
+                          <strong>Founders</strong> who embrace risk,
+                          resilience, and rapid execution.
                         </p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-gray-900 rounded-full mt-3 flex-shrink-0"></div>
                         <p className="text-lg text-gray-800">
-                          <strong>Entrepreneurs</strong> seeking AI-first, blockchain-native foundations.
+                          <strong>Entrepreneurs</strong> seeking AI-first,
+                          blockchain-native foundations.
                         </p>
                       </div>
                     </div>
+                  </div>
+                  {formOpen ? (
+                    <ChevronUp className="w-8 h-8 text-gray-900 flex-shrink-0" />
+                  ) : (
+                    <ChevronDown className="w-8 h-8 text-gray-900 flex-shrink-0" />
+                  )}
+                </button>
 
+                {formOpen && (
+                  <div className="mt-8">
                     {/* Application Form */}
                     <div className="border-t border-gray-800/20 pt-8">
                       <div className="mb-6">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                        <h3 className="text-xl font-bold text-gray-900 mb-3">
                           Apply to Build With Us
                         </h3>
                         <p className="text-gray-700 text-sm">
-                          We take a selective, hands-on approach. Please provide detailed information:
+                          We take a selective, hands-on approach. Please provide
+                          detailed information:
                         </p>
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4">
@@ -276,94 +300,109 @@ const BuildWithUs = () => {
                   </div>
                 )}
               </div>
-
             </div>
           </div>
         </div>
 
-        {/* Our Process Accordion Section */}
-        <div className="py-20 border-t border-gray-800/20">
+        {/* Our Process Section */}
+        <div className="py-8 border-t border-gray-800/20">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <button
-                  onClick={() => setOurProcessOpen(!ourProcessOpen)}
-                  className="w-full flex items-center justify-between text-left"
-                >
-                  <h2 className="text-4xl font-bold text-gray-900">
-                    Our Process
-                  </h2>
-                  {ourProcessOpen ? (
-                    <ChevronUp className="w-8 h-8 text-gray-900" />
-                  ) : (
-                    <ChevronDown className="w-8 h-8 text-gray-900" />
-                  )}
-                </button>
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+                <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                  Our Process
+                </h2>
 
-                {ourProcessOpen && (
-                  <div className="mt-8">
-                    <p className="text-lg text-gray-700 mb-12">
-                      Our four-step engagement model ensures deep alignment and sustainable success:
+                <p className="text-lg text-gray-700 mb-2">
+                  Our four-step engagement model ensures deep alignment and
+                  sustainable success:
+                </p>
+                <div className="space-y-1">
+                  <div className="flex gap-4">
+                    <span className="text-xl font-bold text-gray-900 flex-shrink-0">
+                      1.
+                    </span>
+                    <p className="text-lg text-gray-800">
+                      <strong>Alignment:</strong> Deep conversations to test
+                      expertise and founder-mission fit.
                     </p>
-                    <div className="space-y-6">
-                      <div className="flex gap-4">
-                        <span className="text-xl font-bold text-gray-900 flex-shrink-0">1.</span>
-                        <p className="text-lg text-gray-800">
-                          <strong>Alignment:</strong> Deep conversations to test expertise and founder-mission fit.
-                        </p>
-                      </div>
-                      <div className="flex gap-4">
-                        <span className="text-xl font-bold text-gray-900 flex-shrink-0">2.</span>
-                        <p className="text-lg text-gray-800">
-                          <strong>Validation → Zynd:</strong> Uses "Zynd" (our proprietary tool) to analyze the problem, market demand, and solution viability.
-                        </p>
-                      </div>
-                      <div className="flex gap-4">
-                        <span className="text-xl font-bold text-gray-900 flex-shrink-0">3.</span>
-                        <p className="text-lg text-gray-800">
-                          <strong>Co-Build → Omnis:</strong> Our collective embeds into your team, shaping product, tech, and funding.
-                        </p>
-                      </div>
-                      <div className="flex gap-4">
-                        <span className="text-xl font-bold text-gray-900 flex-shrink-0">4.</span>
-                        <p className="text-lg text-gray-800">
-                          <strong>Ignite → Together:</strong> We craft GTM strategies, alliances, and funding pathways.
-                        </p>
-                      </div>
-                    </div>
                   </div>
-                )}
+                  <div className="flex gap-4">
+                    <span className="text-xl font-bold text-gray-900 flex-shrink-0">
+                      2.
+                    </span>
+                    <p className="text-lg text-gray-800">
+                      <strong>Validation → Zynd:</strong> Uses "Zynd" (our
+                      proprietary tool) to analyze the problem, market demand,
+                      and solution viability.
+                    </p>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="text-xl font-bold text-gray-900 flex-shrink-0">
+                      3.
+                    </span>
+                    <p className="text-lg text-gray-800">
+                      <strong>Co-Build → Omnis:</strong> Our collective embeds
+                      into your team, shaping product, tech, and funding.
+                    </p>
+                  </div>
+                  <div className="flex gap-4">
+                    <span className="text-xl font-bold text-gray-900 flex-shrink-0">
+                      4.
+                    </span>
+                    <p className="text-lg text-gray-800">
+                      <strong>Ignite → Together:</strong> We craft GTM
+                      strategies, alliances, and funding pathways.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Why Build With Omnis Section - Value Proposition */}
-        <div className="py-20 border-t border-gray-800/20">
+        <div className="py-8 border-t border-gray-800/20">
           <div className="container mx-auto px-6">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8" style={{ fontStyle: 'italic' }}>
+            <h2
+              className="text-3xl font-bold text-gray-900 mb-4"
+              style={{ fontStyle: "italic" }}
+            >
               Why Build With Omnis
             </h2>
-            <p className="text-lg text-gray-700 mb-12 max-w-3xl">
-              Our core value proposition highlights what sets us apart as your institutional co-founder:
+            <p className="text-base text-gray-700 mb-6 max-w-3xl">
+              Our core value proposition highlights what sets us apart as your
+              institutional co-founder:
             </p>
             <div className="space-y-4 max-w-4xl">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-gray-800" style={{ fontStyle: 'italic' }}>
-                  <strong>Embedded funding and infrastructure</strong> from day one.
+                <p
+                  className="text-lg text-gray-800"
+                  style={{ fontStyle: "italic" }}
+                >
+                  <strong>Embedded funding and infrastructure</strong> from day
+                  one.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-gray-800" style={{ fontStyle: 'italic' }}>
-                  <strong>A co-founding team</strong> with decades of startup and enterprise experience.
+                <p
+                  className="text-lg text-gray-800"
+                  style={{ fontStyle: "italic" }}
+                >
+                  <strong>A co-founding team</strong> with decades of startup
+                  and enterprise experience.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-red-500 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-gray-800" style={{ fontStyle: 'italic' }}>
-                  <strong>AI-first protocols and networks</strong> engineered for scale.
+                <p
+                  className="text-lg text-gray-800"
+                  style={{ fontStyle: "italic" }}
+                >
+                  <strong>AI-first protocols and networks</strong> engineered
+                  for scale.
                 </p>
               </div>
             </div>
