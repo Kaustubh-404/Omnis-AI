@@ -26,13 +26,13 @@ const Footer = () => {
           <div className="mt-4">
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Twitter size={24} />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail size={24} />
               </a>
             </div>
