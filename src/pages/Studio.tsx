@@ -111,7 +111,7 @@ const Studio = () => {
       </section>
 
       {/* Our Belief */}
-      <section className="py-20 bg-gradient-to-b from-[#A8E5EC] to-[#ffac9a]">
+      <section className=" bg-gradient-to-b from-[#A8E5EC] to-[#ffac9a]">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -135,7 +135,7 @@ const Studio = () => {
       </section>
 
       {/* What We Build & Omnis Studio Advantage */}
-      <section className="py-20 bg-gradient-to-b from-[#ffac9a] to-[#FFC8BC]">
+      <section className="py-10 bg-gradient-to-b from-[#ffac9a] to-[#FFC8BC]">
         <div className="container mx-auto px-6">
           <div className="max-w-5xl mx-auto">
             <Accordion type="single" collapsible className="w-full space-y-4">

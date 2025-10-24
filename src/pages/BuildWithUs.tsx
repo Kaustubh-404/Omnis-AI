@@ -98,11 +98,11 @@ const BuildWithUs = () => {
               <div className="flex justify-center lg:justify-end">
                 <div className="relative">
                   {/* Stylized red coral-like 3D graphic element */}
-                  <div className="w-[1000px] h-[1000px] flex items-center justify-center">
+                  <div className="w-[1000px] h-[700px] flex items-center justify-center">
                     <img
                       src="/download.png"
                       alt="Stylized red coral-like 3D graphic"
-                      className="w-full h-full object-contain"
+                      className="w-full  object-contain"
                     />
                   </div>
                 </div>
@@ -112,7 +112,7 @@ const BuildWithUs = () => {
         </div>
 
         {/* Who We Work With Section */}
-        <div className="pt-4 pb-8">
+        <div className="pb-8">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 mb-6 flex flex-col">
