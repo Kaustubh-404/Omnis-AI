@@ -21,11 +21,24 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavClick = () => {
+    scrollToTop();
+  };
+
+  const handleMobileNavClick = () => {
+    closeMenu();
+    scrollToTop();
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex flex-col items-start">
+          <Link to="/" className="flex flex-col items-start" onClick={handleNavClick}>
             <img src={omnisLogo} alt="OMNIS" className="h-12" />
 
           </Link>
@@ -35,6 +48,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={handleNavClick}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   location.pathname === item.path
                     ? "text-primary"
@@ -44,7 +58,7 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/build-with-us">
+            <Link to="/build-with-us" onClick={handleNavClick}>
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Build With Us
               </Button>
@@ -79,7 +93,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                onClick={closeMenu}
+                onClick={handleMobileNavClick}
                 className={`block text-sm font-medium transition-colors hover:text-primary ${
                   location.pathname === item.path
                     ? "text-primary"
@@ -90,7 +104,7 @@ const Navigation = () => {
               </Link>
             ))}
             <div className="pt-2">
-              <Link to="/build-with-us" onClick={closeMenu}>
+              <Link to="/build-with-us" onClick={handleMobileNavClick}>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                   Build With Us
                 </Button>
