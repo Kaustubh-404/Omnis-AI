@@ -9,68 +9,84 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: "James Chacko",
-      role: "Finance and Scale",
-      image: "/james.jpeg",
-      description: "Oliver, our co-founder, leads Finance and Scale at omnis. He was a former MD and Country Head of D.E. Shaw India and Arcesium, and has been in leadership positions with several global MNCs that mostly operate at the intersection of technology and finance since 1992. Oliver is an alumnus of Harvard Business School and a Fellow Chartered Accountant.",
-      drives: "Oliver is passionate about developing human capabilities and has been a key volunteer at Sparsh Hospice, since its inception.",
-      helps: ["Finance Strategy and Planning", "Growth and Scale"],
-    },
-    {
-      name: "Aditya Berry",
-      role: "Strategy and GTM",
-      image: "/aditya.jpg",
-      description: "Meet Srinivas, our co-founder, leading Strategy and Go-to-Market at Biome. With over three decades of experience from across geographies, Srini is the Co-Founder of T-Hub Hyderabad (Asia's largest Innovation campus), India President for the Global Entrepreneurship Network, a Board Member of GEN Space, and the South Asia Advisory Board for the Dalai Lama Center for Ethics at MIT.",
-      drives: "Srini's true passion lies in building robust, resilient venture ecosystems, helping startups scale and building thriving communities around entrepreneurship.",
-      helps: ["Product Strategy", "Product Management", "Business Development", "Go-to-Market Strategy"],
-    },
-    {
-      name: "Prathamesh Mukutre",
-      role: "Research & Finance",
+      name: "Prathamesh Mukture",
+      role: "Tokenization and New Economy",
       image: "/prathamesh.jpg",
-      description: "Arunabh brings experience in finance and valuations, complemented by strategic exposure in the MD's Office at ONDC - one of the key pillars of India's Digital Public Infrastructure (DPI) ecosystem.",
-      drives: "Arunabh is passionate about building solutions on the foundational rails of Digital Public Infrastructure (DPI). He firmly believes in its potential to unlock unprecedented innovation and deliver meaningful impact.",
-      helps: ["Research & Analysis for Ideation", "Validation", "Financial Modelling"],
-    },
-    {
-      name: "Loveth Angel",
-      role: "Research & Validation",
-      image: "/loveth.jpeg",
-      description: "Usha looks after Research and Partnerships at Biome. With nearly 4 years of experience in the Venture Capital industry, she has worked with companies across D2C, Agri-tech, and Age-tech.",
-      drives: "Usha is driven by identifying patterns & insights through deep research in areas that can have a positive impact on the world. She loves helping to build companies that are better for the planet.",
-      helps: ["Research & Analysis", "Idea Validation"],
-    },
-    {
-      name: "Chandan Kumar",
-      role: "Product and Validation",
-      image: "/chandan.jpg",
-      description: "Kaustubh heads Product and Validation at Biome. With over two decades of experience in building and scaling tech products and teams, he is the founder of The ProdZen - a product and strategy consulting company.",
-      drives: "Kaustubh enjoys creating products from just an idea or improving existing products and scaling the business.",
-      helps: ["Product and Validation", "Business Model Validation"],
-    },
-    {
-      name: "Swapnil Shinde",
-      role: "Growth and Capital",
-      image: "/swapnil.jpg",
-      description: "Leading Growth and Capital at Biome, Zaran has 8 years of experience in Venture Building and Venture Capital across India and South East Asia.",
-      drives: "Zaran doubles up as a sounding board and shadow boxing partner for ideas on how to scale the business, position the product, raise funds, and navigate challenges on the startup journey.",
-      helps: ["Fundraising", "Pitching", "Closing customers"],
+      description: "Prathamesh leads Tokenization and New Economy initiatives at Omnis, bringing deep expertise in blockchain technologies and digital asset frameworks.",
+      drives: "Prathamesh is passionate about building the future of digital economies and tokenization systems that can transform how value is created and exchanged.",
+      helps: ["Tokenization Strategy", "Digital Asset Management", "New Economy Models"],
     },
     {
       name: "Suresh Jain",
-      role: "Operations & Admin",
+      role: "Capital and Growth",
       image: "/suresh.png",
-      description: "Khaja leads the Admin Department at Biome, and has 9 years of experience in coordinating and expediting the flow of work. His experience covers IT recruitment, HR, and Admin operations.",
-      drives: "Khaja is dedicated to ensuring smooth and efficient operations, and is driven by a passion for administrative excellence and continuous improvement.",
-      helps: ["Operational excellence and effective administration"],
+      description: "Suresh leads Capital and Growth strategies at Omnis, with extensive experience in scaling businesses and capital allocation.",
+      drives: "Suresh is dedicated to identifying growth opportunities and building sustainable capital strategies for long-term success.",
+      helps: ["Capital Strategy", "Growth Planning", "Investment Management"],
+    },
+    {
+      name: "Loveth Angel",
+      role: "Research and Validation",
+      image: "/loveth.jpeg",
+      description: "Loveth heads Research and Validation at Omnis, with expertise in market research and business model validation.",
+      drives: "Loveth is driven by uncovering insights through rigorous research that can validate and strengthen business propositions.",
+      helps: ["Market Research", "Business Validation", "Data Analysis"],
+    },
+    {
+      name: "Kapil Jain",
+      role: "Product engineering and Web3",
+      image: "/kapil.jpg",
+      description: "Kapil leads Product Engineering and Web3 development at Omnis, bringing technical expertise in decentralized technologies.",
+      drives: "Kapil is passionate about building innovative Web3 products that push the boundaries of what's possible in decentralized systems.",
+      helps: ["Web3 Development", "Product Engineering", "Technical Architecture"],
+    },
+    {
+      name: "Vishesh Bapna",
+      role: "Finance management",
+      image: "/vishesh.jpg",
+      description: "Vishesh manages Finance at Omnis, ensuring robust financial planning and management across all ventures.",
+      drives: "Vishesh is committed to maintaining financial excellence and building sustainable financial frameworks for growth.",
+      helps: ["Financial Planning", "Budget Management", "Financial Analysis"],
+    },
+    {
+      name: "James Chacko",
+      role: "Ideation and Execution",
+      image: "/james.jpeg",
+      description: "James leads Ideation and Execution at Omnis, transforming innovative concepts into reality through strategic execution.",
+      drives: "James is passionate about turning bold ideas into successful ventures through meticulous planning and execution.",
+      helps: ["Strategic Planning", "Project Execution", "Innovation Management"],
+    },
+    {
+      name: "Aditya Berry",
+      role: "Machine and data science",
+      image: "/aditya.jpg",
+      description: "Aditya heads Machine Learning and Data Science at Omnis, leveraging AI and analytics to drive intelligent decision-making.",
+      drives: "Aditya is passionate about harnessing the power of data and machine learning to create intelligent solutions.",
+      helps: ["Machine Learning", "Data Analytics", "AI Strategy"],
+    },
+    {
+      name: "Chandan Kumar",
+      role: "Product creator and Validator",
+      image: "/chandan.jpg",
+      description: "Chandan is a Product Creator and Validator at Omnis, specializing in product development and market validation.",
+      drives: "Chandan enjoys creating innovative products and validating them through rigorous testing and market feedback.",
+      helps: ["Product Development", "Market Validation", "User Experience"],
+    },
+    {
+      name: "Swapnil Shinde",
+      role: "Stacks and Execution",
+      image: "/swapnil.png",
+      description: "Swapnil leads Technology Stacks and Execution at Omnis, ensuring robust technical infrastructure and delivery.",
+      drives: "Swapnil is driven by building scalable technology stacks that enable seamless execution of complex projects.",
+      helps: ["Technology Stack Design", "System Architecture", "Technical Execution"],
     },
     {
       name: "Janet Luke",
       role: "Business Model Validation",
       image: "/janet.jpeg",
-      description: "Mani champions validation experiments and primary research activities at Biome. A graduate of Cardiff University, Mani has over 10 years of entrepreneurial experience building and running SMBs.",
-      drives: "Mani is passionate about building robust, repeatable frameworks and methodologies that derisk the entrepreneurial endeavour.",
-      helps: ["Ideation", "Business Model Validation"],
+      description: "Janet specializes in Business Model Validation at Omnis, ensuring sustainable and viable business frameworks.",
+      drives: "Janet is passionate about validating business models through data-driven approaches and market analysis.",
+      helps: ["Business Model Design", "Market Validation", "Strategic Analysis"],
     },
   ];
 
@@ -117,9 +133,9 @@ const Team = () => {
         {/* Team Section - Continuous with hero */}
         <div className="py-12 relative">
         <div className="container mx-auto px-6">
-          {/* First row - 4 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-6">
-            {teamMembers.slice(0, 4).map((member, index) => (
+          {/* First row - 5 members */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto mb-6">
+            {teamMembers.slice(0, 5).map((member, index) => (
               <div
                 key={index}
                 className={`${index % 2 === 1 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
@@ -152,11 +168,11 @@ const Team = () => {
             ))}
           </div>
 
-          {/* Second row - 4 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {teamMembers.slice(4, 8).map((member, index) => (
+          {/* Second row - 5 members */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            {teamMembers.slice(5, 10).map((member, index) => (
               <div
-                key={index + 4}
+                key={index + 5}
                 className={`${index % 2 === 0 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
                 onClick={() => setSelectedMember(member)}
               >
