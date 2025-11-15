@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Neue Montreal', 'sans-serif'],
+        sans: ['Satoshi', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
