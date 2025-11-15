@@ -11,6 +11,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Studio", path: "/studio" },
     { name: "Team", path: "/team" },
+    { name: "Work Together", path: "/work-together" },
   ];
 
   const toggleMenu = () => {
@@ -22,7 +23,7 @@ const Navigation = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleNavClick = () => {
@@ -35,12 +36,11 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex flex-col items-start" onClick={handleNavClick}>
-            <img src={omnisLogo} alt="OMNIS" className="h-12" />
-
+          <Link to="/" className="flex items-center" onClick={handleNavClick}>
+            <img src="/omnis_logo.png" alt="Omnis AI" className="h-5" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -49,24 +49,24 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 onClick={handleNavClick}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-orange-400 ${
                   location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-orange-400"
+                    : "text-gray-300"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Link to="/build-with-us" onClick={handleNavClick}>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Build With Us
+            <Link to="/join" onClick={handleNavClick}>
+              <Button className="bg-orange-500 text-white hover:bg-orange-600 px-6 py-2 rounded-lg font-medium">
+                Join
               </Button>
             </Link>
           </div>
 
           <button
-            className="md:hidden text-primary"
+            className="md:hidden text-white"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -94,19 +94,19 @@ const Navigation = () => {
                 key={item.path}
                 to={item.path}
                 onClick={handleMobileNavClick}
-                className={`block text-sm font-medium transition-colors hover:text-primary ${
+                className={`block text-sm font-medium transition-colors hover:text-orange-400 ${
                   location.pathname === item.path
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                    ? "text-orange-400"
+                    : "text-gray-300"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
             <div className="pt-2">
-              <Link to="/build-with-us" onClick={handleMobileNavClick}>
-                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                  Build With Us
+              <Link to="/join" onClick={handleMobileNavClick}>
+                <Button className="w-full bg-orange-500 text-white hover:bg-orange-600 px-6 py-2 rounded-lg font-medium">
+                  Join
                 </Button>
               </Link>
             </div>
