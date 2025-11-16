@@ -91,134 +91,121 @@ const Team = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <Navigation />
 
-      {/* Continuous Gradient Background - Hero + Teams */}
-      <div
-        className="relative"
-        style={{
-          background: 'linear-gradient(180deg, #4B6FFF 0%, #8FA7FF 50%, #87CEEB 60%, #40E0D0 70%, #FFB347 85%, #FF7F7F 100%)',
-          minHeight: '100vh'
-        }}
-      >
-        {/* Hero Section */}
-        <div className="relative min-h-[80vh] flex items-center justify-start">
-          {/* Background GIF Overlay */}
-          <div
-            className="absolute inset-0 opacity-30"
-            style={{
-              backgroundImage: 'url(https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/66432625cd12bc42537fdae8_140524_Biome_Build-strong-header-video.gif)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            }}
-          />
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl">
-              <h1
-                className="text-white font-bold mb-6 leading-none"
-                style={{ fontSize: '90px', lineHeight: '0.9' }}
-              >
-                The Omnis<br />Founding Collective
-              </h1>
-              <p className="text-white text-lg max-w-3xl leading-relaxed">
-                At Omnis, we believe world-changing ventures are built by diverse minds working as one. Our founding collective brings together finance leaders, product innovators, ecosystem builders, and capital experts—a team that acts as institutional co-founders for every venture we create.
+      {/* Hero Section */}
+      <section className="bg-black pt-20">
+        <div className="container mx-auto px-6 py-16">
+          <div className="max-w-4xl">
+            <div className="mb-8">
+              <p className="text-gray-400 text-sm font-medium tracking-wider uppercase mb-4">
+                THE TEAM
               </p>
+              <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                The <span className="text-orange-500">Omnis</span> Founding Collective
+              </h1>
             </div>
+            <p className="text-gray-300 text-xl max-w-3xl leading-relaxed">
+              At Omnis, we believe world-changing ventures are built by diverse minds working as one. Our founding collective brings together finance leaders, product innovators, ecosystem builders, and capital experts—a team that acts as institutional co-founders for every venture we create.
+            </p>
           </div>
         </div>
+      </section>
 
-        {/* Team Section - Continuous with hero */}
-        <div className="py-12 relative">
+      {/* Team Section */}
+      <section className="py-12 bg-black">
         <div className="container mx-auto px-6">
-          {/* First row - 5 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto mb-6">
-            {teamMembers.slice(0, 5).map((member, index) => (
+          {/* First row - 3 members */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+            {teamMembers.slice(0, 3).map((member, index) => (
               <div
                 key={index}
-                className={`${index % 2 === 1 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
+                className="group relative overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300"
                 onClick={() => setSelectedMember(member)}
               >
-                {/* Avatar section */}
-                <div className="h-48 bg-white relative flex items-center justify-center overflow-hidden">
+                {/* Image section with overlay */}
+                <div className="h-80 relative">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                   />
+                  {/* Dark gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
 
-                  {/* Plus icon */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-700 text-lg font-light">+</span>
+                  {/* Content overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-white mb-1">
+                      {member.name}
+                    </h3>
+                    <p className="text-sm font-medium text-gray-300 uppercase tracking-wider">
+                      {member.role}
+                    </p>
                   </div>
-                </div>
-
-                {/* Content */}
-                <div className="p-4 text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm font-medium text-gray-600">
-                    {member.role}
-                  </p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Second row - 5 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-            {teamMembers.slice(5, 10).map((member, index) => (
-              <div
-                key={index + 5}
-                className={`${index % 2 === 0 ? "mt-8" : "mb-8"} group relative bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
-                onClick={() => setSelectedMember(member)}
-              >
-                {/* Avatar section */}
-                <div className="h-48 bg-white relative flex items-center justify-center overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-contain"
-                  />
+          {/* Remaining rows - 3 members each */}
+          <div className="space-y-8">
+            {[0, 1, 2].map((rowIndex) => {
+              const startIndex = 3 + rowIndex * 3;
+              const rowMembers = teamMembers.slice(startIndex, startIndex + 3);
 
-                  {/* Plus icon */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-white/90 rounded-full flex items-center justify-center shadow-sm group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-gray-700 text-lg font-light">+</span>
-                  </div>
-                </div>
+              if (rowMembers.length === 0) return null;
 
-                {/* Content */}
-                <div className="p-4 text-center">
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm font-medium text-gray-600">
-                    {member.role}
-                  </p>
+              return (
+                <div key={rowIndex} className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                  {rowMembers.map((member, index) => (
+                    <div
+                      key={startIndex + index}
+                      className="group relative overflow-hidden cursor-pointer transform hover:scale-105 transition-all duration-300"
+                      onClick={() => setSelectedMember(member)}
+                    >
+                      {/* Image section with overlay */}
+                      <div className="h-80 relative">
+                        <img
+                          src={member.image}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Dark gradient overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                        {/* Content overlay */}
+                        <div className="absolute bottom-0 left-0 right-0 p-6">
+                          <h3 className="text-xl font-bold text-white mb-1">
+                            {member.name}
+                          </h3>
+                          <p className="text-sm font-medium text-gray-300 uppercase tracking-wider">
+                            {member.role}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
-        </div>
-      </div>
+      </section>
 
       {/* Member Detail Popup Modal */}
       {selectedMember && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <div className="bg-gray-900 border border-gray-700 rounded-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
             <div className="p-6">
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">{selectedMember.name}</h3>
-                  <p className="text-lg font-medium text-blue-600">{selectedMember.role}</p>
+                  <h3 className="text-2xl font-bold mb-2 text-white">{selectedMember.name}</h3>
+                  <p className="text-lg font-medium text-orange-500">{selectedMember.role}</p>
                 </div>
                 <button
                   onClick={() => setSelectedMember(null)}
-                  className="text-gray-400 hover:text-gray-600 p-2"
+                  className="text-gray-400 hover:text-gray-300 p-2"
                 >
                   <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -228,17 +215,17 @@ const Team = () => {
 
               <div className="space-y-6">
                 <div>
-                  <p className="text-gray-700 leading-relaxed">{selectedMember.description}</p>
+                  <p className="text-gray-300 leading-relaxed">{selectedMember.description}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">What drives them</h4>
-                  <p className="text-gray-600 leading-relaxed">{selectedMember.drives}</p>
+                  <h4 className="font-semibold text-lg mb-3 text-white">What drives them</h4>
+                  <p className="text-gray-400 leading-relaxed">{selectedMember.drives}</p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-lg mb-3">As a co-founder, helps startups with</h4>
-                  <div className="text-gray-600">
+                  <h4 className="font-semibold text-lg mb-3 text-white">As a co-founder, helps startups with</h4>
+                  <div className="text-gray-400">
                     {selectedMember.helps.map((help: string, idx: number) => (
                       <p key={idx} className="mb-1">• {help}</p>
                     ))}
