@@ -2,13 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import zyndImage from "@/assets/download.png";
 
 const Home = () => {
   return (
@@ -76,413 +69,117 @@ const Home = () => {
       </section>
 
       {/* Three Pillars */}
-      <section className="py-20 bg-gradient-to-b from-[#6ca1e3] to-[#6fcbd6] relative overflow-hidden">
+      <section className="py-20 bg-black relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="flex justify-center items-center gap-12 mb-12 max-w-4xl mx-auto">
-            <h3 className="text-5xl font-bold text-black underline">
+          <div className="flex justify-start items-start gap-16 mb-12 max-w-4xl">
+            <h3 className="text-4xl font-bold text-orange-500">
               Accelerate
             </h3>
-            <h3 className="text-5xl font-bold text-black underline">Scale</h3>
-            <h3 className="text-5xl font-bold text-black underline">Impact</h3>
+            <h3 className="text-4xl font-bold text-orange-500">Scale</h3>
+            <h3 className="text-4xl font-bold text-orange-500">Impact</h3>
           </div>
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-2xl text-black">
-              Through our AI-first decentralized agent protocol, Zynd, we
-              accelerate ideas, scale them to billions, and generate
-              transformative impact. We are more than advisors. We're tech
-              enablers and fund providers who co-build with founders to design
-              AI-powered, blockchain-native ventures that reshape industries. We
-              collaborate with courageous entrepreneurs to forge AI, DEPIN
-              (Decentralized Physical Infrastructure Networks), and
-              Robotics-driven ventures with lasting value.
+          <div className="max-w-4xl">
+            <p className="text-xl text-white leading-relaxed">
+              Through our AI-first decentralized agent protocol, Zynd, we co-build and fund bold
+              founders to create AI, DEPIN, and robotics ventures that redefine industries and scale
+              transformative ideas to billions.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Focus */}
-      <section className="py-20 bg-gradient-to-b from-[#6fcbd6] to-[#ffac9a]">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-96 rounded-2xl overflow-hidden flex items-center justify-center">
-              <img
-                src="/globe-animation.gif"
-                alt="Globe Animation"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div>
-              <Accordion type="single" collapsible className="w-full space-y-4">
-                <AccordionItem
-                  value="item-1"
-                  className="border border-black/20 rounded-lg px-6 bg-white/10"
-                >
-                  <AccordionTrigger className="text-xl font-bold text-black">
-                    Billion lives bettered
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    We build solutions that reach and improve billions of lives
-                    through cutting-edge technology and innovative approaches.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem
-                  value="item-2"
-                  className="border border-black/20 rounded-lg px-6 bg-white/10"
-                >
-                  <AccordionTrigger className="text-xl font-bold text-black">
-                    Humanity-Focused
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    How might we dismantle barriers, foster inclusivity, and
-                    deliver health equity at population scale?
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem
-                  value="item-3"
-                  className="border border-black/20 rounded-lg px-6 bg-white/10"
-                >
-                  <AccordionTrigger className="text-xl font-bold text-black">
-                    Planet-Driven
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    How can we accelerate sustainability and climate-positive
-                    solutions with AI and robotics?
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem
-                  value="item-4"
-                  className="border border-black/20 rounded-lg px-6 bg-white/10"
-                >
-                  <AccordionTrigger className="text-xl font-bold text-black">
-                    Business-Forward
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    How can AI agents drive real-time governance, compliance,
-                    and regulatory transformation for enterprises?
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Ideas to Enterprises */}
-      <section className="py-20 bg-gradient-to-b from-[#ffac9a] via-[#FFB8A8] to-[#FFC8BC] relative overflow-hidden">
+      <section className="py-16 bg-black relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mb-12">
             <h2
-              className="text-6xl md:text-8xl font-bold text-black mb-6"
-              style={{ lineHeight: "0.99" }}
+              className="text-5xl md:text-6xl font-bold text-white mb-4"
+              style={{ lineHeight: "1.1" }}
             >
-              Ideas to
-              <br />
-              Enterprises
+              Ideas to Enterprises
             </h2>
-            <p className="text-2xl text-black">
-              The venture studio model is a powerful new approach that is
-              redefining entrepreneurship. By combining company building with
-              funding, we accelerate timelines, iterate rapidly and scale
-              faster.
+            <p className="text-base text-white leading-relaxed max-w-2xl">
+              The venture studio model is a powerful new approach that is redefining entrepreneurship. By combining
+              company building with funding, we accelerate timelines, iterate rapidly and break faster.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 items-end">
-            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 relative h-[500px] flex flex-col">
-              <h3 className="text-3xl font-bold text-black mb-4">validate</h3>
-              <p className="text-black text-xl mb-8 flex-grow">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-black p-4 relative flex flex-col">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-6 h-6 bg-orange-500 rounded-full"></div>
+                <h3 className="text-lg font-bold text-orange-500">Validate</h3>
+              </div>
+              <p className="text-white text-sm leading-relaxed">
                 Deep, systematic research and experimentation to validate both
                 the problem in the market and the solution.
               </p>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944fc06b54b45a6d8640c_icons-01-240424.gif"
-                  alt="Validate"
-                  className="w-56 h-56 object-contain"
-                />
-              </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#6FCBD5] to-[#A8E5EC] p-8 relative h-[450px] flex flex-col">
-              <h3 className="text-3xl font-bold text-black mb-4">build</h3>
-              <p className="text-black text-xl mb-8 flex-grow">
+            <div className="bg-black p-4 relative flex flex-col">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-6 h-6 bg-orange-500 rounded-full"></div>
+                <h3 className="text-lg font-bold text-orange-500">Build</h3>
+              </div>
+              <p className="text-white text-sm leading-relaxed">
                 Full-stack team building each component of a Venture alongside
                 founders.
               </p>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff7cb9dd5f2944e3b1_icons-02-240424.gif"
-                  alt="Build"
-                  className="w-56 h-56 object-contain"
-                />
-              </div>
             </div>
 
-            <div className="bg-gradient-to-b from-[#FFA694] to-[#FFE4DE] p-8 relative h-[500px] flex flex-col">
-              <h3 className="text-3xl font-bold text-black mb-4">scale</h3>
-              <p className="text-black text-xl mb-8 flex-grow">
+            <div className="bg-black p-4 relative flex flex-col">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-6 h-6 bg-orange-500 rounded-full"></div>
+                <h3 className="text-lg font-bold text-orange-500">Scale</h3>
+              </div>
+              <p className="text-white text-sm leading-relaxed">
                 Accelerating growth through GTM, partnerships, strategy and
                 funding.
               </p>
-              <div className="flex items-center justify-center">
-                <img
-                  src="https://cdn.prod.website-files.com/6641b1d4a8d8ad47ca9a0259/667944ff97e186ef92ac69e4_icons-03-240424.gif"
-                  alt="Scale"
-                  className="w-56 h-56 object-contain"
-                />
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Circuit Board Image Section */}
+      <section className="py-0 bg-black">
+        <div className="w-full">
+          <div className="relative w-full h-[600px] overflow-hidden">
+            <img
+              src="/asset.png"
+              alt="Circuit Board"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
 
       {/* Zynd Section */}
-      <section className="py-20 bg-gradient-to-b from-[#FFC8BC] to-[#6FCBD5]">
+      <section className="py-16 bg-black relative overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-                Zynd - The Core of Omnis
-              </h2>
-              <p className="text-2xl text-black mb-6">
-                At the heart of Omnis lies Zynd, our proprietary decentralized
-                AI agent protocol. Zynd is the foundation of every venture we
-                co-create, enabling real-time decision-making, dynamic
-                regulatory adaptation, and scalable AI-native operations. Beyond
-                technology, Zynd is a funding engine and ecosystem enabler,
-                driving innovation with its own proprietary hackathons to
-                uncover daring ideas and visionary founders.
-              </p>
-              <p className="text-xl text-black">
-                Deep dive into Zynd :{" "}
-                <a
-                  href="https://www.zynd.ai"
-                  className="text-blue-600 underline hover:no-underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  www.zynd.ai
-                </a>
-              </p>
-            </div>
-
-            <div className="relative h-96 rounded-2xl overflow-hidden flex items-center justify-center">
-              <img
-                src={zyndImage}
-                alt="Zynd Core"
-                className="w-full h-full object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* EIR Section */}
-      <section className="py-20 bg-[#6FCBD5]">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl font-bold text-black mb-6">
-              Entrepreneur-in-Residence (EIR)
+          <div className="max-w-4xl">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Zynd - The Core of Omnis
             </h2>
-            <p className="text-2xl text-black">
-              An EIR at Omnis is more than a partner—they are a visionary
-              founder-in-residence. Whether starting with a spark of an idea or
-              a strong early concept, we co-create ventures systematically,
-              ensuring they are AI-first, blockchain-ready, and built for scale.
+            <p className="text-sm text-white leading-relaxed mb-8 max-w-3xl">
+              At the heart of Omnis lies Zynd, our proprietary decentralized AI agent protocol. Zynd is the foundation of every venture we co-create, enabling real-time decision-making, dynamic regulatory adaptation, and scalable AI-native operations. Beyond technology, Zynd is a funding engine and ecosystem enabler, driving innovation with its own proprietary hackathons to uncover daring ideas and visionary founders.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="py-12 overflow-hidden relative bg-gradient-to-b from-[#6FCBD5] to-[#A8E5EC]">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#6FCBD5]/50 to-[#A8E5EC]/50 backdrop-blur-sm"></div>
-        <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl underline font-bold text-black text-center mb-8">
-            Our Partners
-          </h2>
-          <div className="relative">
-            <div className="flex animate-scroll">
-              <div className="flex space-x-20 px-8">
-                {/* Zynd */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <div
-                    className="text-3xl font-bold text-black"
-                    style={{ fontFamily: "Georgia, serif" }}
-                  >
-                    Zynd
-                  </div>
-                </div>
-
-                {/* Verusa */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://www.verusa.ai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/verusa.svg"
-                      alt="Verusa"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* Aion Assure */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <div
-                    className="text-3xl font-bold text-black"
-                    style={{ fontFamily: "Georgia, serif" }}
-                  >
-                    Aion Assure
-                  </div>
-                </div>
-
-                {/* Sunicon */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://sunicon.vc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/sunicon.avif"
-                      alt="Sunicon"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* Dhiway */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://dhiway.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/dhiway.png"
-                      alt="Dhiway"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* NANDA - MIT */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://nanda.media.mit.edu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div
-                      className="text-3xl font-bold text-black"
-                      style={{ fontFamily: "Georgia, serif" }}
-                    >
-                      NANDA-MIT
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              {/* Duplicate for seamless loop */}
-              <div className="flex space-x-20 px-8">
-                {/* Zynd */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <div
-                    className="text-3xl font-bold text-black"
-                    style={{ fontFamily: "Georgia, serif" }}
-                  >
-                    Zynd
-                  </div>
-                </div>
-
-                {/* Verusa */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://www.verusa.ai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/verusa.svg"
-                      alt="Verusa"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* Aion Assure */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <div
-                    className="text-3xl font-bold text-black"
-                    style={{ fontFamily: "Georgia, serif" }}
-                  >
-                    Aion Assure
-                  </div>
-                </div>
-
-                {/* Sunicon */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://sunicon.vc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/sunicon.avif"
-                      alt="Sunicon"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* Dhiway */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://dhiway.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full h-full flex items-center justify-center"
-                  >
-                    <img
-                      src="/dhiway.png"
-                      alt="Dhiway"
-                      className="w-40 h-20 object-contain"
-                    />
-                  </a>
-                </div>
-
-                {/* NANDA - MIT */}
-                <div className="flex-shrink-0 w-52 h-28 flex items-center justify-center">
-                  <a
-                    href="https://nanda.media.mit.edu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div
-                      className="text-3xl font-bold text-black"
-                      style={{ fontFamily: "Georgia, serif" }}
-                    >
-                      NANDA
-                    </div>
-                  </a>
-                </div>
+          <div className="mt-12">
+            <div className="flex items-center gap-6">
+              <img src="/omnis_logo.png" alt="Omnis AI" className="h-6" />
+              <div className="flex gap-6 text-white text-xs">
+                <span>About</span>
+                <span>Team</span>
+                <span>Contact</span>
+                <span>Portfolio</span>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       <Footer />
     </div>
