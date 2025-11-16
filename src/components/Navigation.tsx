@@ -11,7 +11,7 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Studio", path: "/studio" },
     { name: "Team", path: "/team" },
-    { name: "Work Together", path: "/work-together" },
+    { name: "Build With Us", path: "/build-with-us" },
   ];
 
   const toggleMenu = () => {

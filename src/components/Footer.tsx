@@ -1,49 +1,65 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Mail } from "lucide-react";
-import omnisLogo from "@/assets/omnis-logo.png";
+import footerLogo from "@/assets/footer-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-12">
-      <div className="container mx-auto flex flex-col px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-20 mx-auto">
-          <div className="mr-8">
-            <Link to="/" className="inline-block mb-1">
-              <img src={omnisLogo} alt="OMNIS" className="h-20" />
-            </Link>
-            <p className="text-sm text-muted-foreground">
-              An AI-First Blockchain Venture Studio
-            </p>
-          </div>
+    <footer className="bg-black relative overflow-hidden py-16">
+      {/* Background Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-5">
+        <img
+          src={footerLogo}
+          alt="Omnis AI Watermark"
+          className="w-full max-w-6xl h-auto object-contain"
+        />
+      </div>
 
-          <div className="mt-4">
-            <h4 className="font-semibold text-foreground mb-4">Contact</h4>
-            <a href="mailto:info@omnis.ltd" className="text-base text-muted-foreground hover:text-primary transition-colors">
-              info@omnis.ltd
-            </a>
-          </div>
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col md:flex-row justify-between items-start">
+          {/* Left side - Logo and Address */}
+          <div className="mb-8 md:mb-0">
+            <div className="flex items-center mb-4">
+              <img
+                src={footerLogo}
+                alt="Omnis AI"
+                className="h-8 mr-3"
+              />
+              <h2 className="text-2xl font-bold text-white">Omnis AI</h2>
+            </div>
+            <div className="text-gray-400 text-sm leading-relaxed">
+              <p>13 Ambey Avas Colony, Mini Bypass</p>
+              <p>Road, Barelly, India - 243122</p>
+            </div>
 
-          <div className="mt-4">
-            <h4 className="font-semibold text-foreground mb-4">Connect</h4>
-            <div className="flex gap-4">
-              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Linkedin size={24} />
+            {/* Social Icons */}
+            <div className="flex gap-4 mt-6">
+              <a href="/" className="text-orange-500 hover:text-orange-400 transition-colors">
+                <Twitter size={20} />
               </a>
-              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter size={24} />
+              <a href="/" className="text-orange-500 hover:text-orange-400 transition-colors">
+                <Linkedin size={20} />
               </a>
-              <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
-                <Mail size={24} />
+              <a href="/" className="text-orange-500 hover:text-orange-400 transition-colors">
+                <Mail size={20} />
               </a>
             </div>
           </div>
 
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground">
-            © 2025 Omnis. All rights reserved.
-          </p>
+          {/* Right side - Navigation Links */}
+          <div className="flex gap-8">
+            <Link to="/work" className="text-white hover:text-orange-500 transition-colors text-sm">
+              Our Work
+            </Link>
+            <Link to="/about" className="text-white hover:text-orange-500 transition-colors text-sm">
+              About
+            </Link>
+            <Link to="/partners" className="text-white hover:text-orange-500 transition-colors text-sm">
+              Partners
+            </Link>
+            <Link to="/team" className="text-white hover:text-orange-500 transition-colors text-sm">
+              Team
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
