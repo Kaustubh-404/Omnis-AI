@@ -11,7 +11,6 @@ const Navigation = () => {
     { name: "Home", path: "/" },
     { name: "Studio", path: "/studio" },
     { name: "Team", path: "/team" },
-    { name: "Build With Us", path: "/build-with-us" },
   ];
 
   const toggleMenu = () => {
@@ -58,9 +57,9 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <Link to="/join" onClick={handleNavClick}>
+            <Link to="/build-with-us" onClick={handleNavClick}>
               <Button className="bg-orange-500 text-white hover:bg-orange-600 px-6 py-2 rounded-lg font-medium">
-                Join
+                Build with us
               </Button>
             </Link>
           </div>

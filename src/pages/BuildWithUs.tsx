@@ -68,7 +68,7 @@ const BuildWithUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="max-w-2xl">
-              <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Build With
                 <br />
                 <span className="text-orange-500">Omnis</span>
@@ -77,7 +77,7 @@ const BuildWithUs = () => {
 
             {/* Right Content - Description */}
             <div className="max-w-lg">
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
                 At Omnis, we believe world-changing ventures are built by diverse minds working as one. Our founding collective brings together finance leaders, product innovators, ecosystem builders, and capital experts—a team that acts as institutional co-founders for every venture we create.
               </p>
             </div>
@@ -150,7 +150,7 @@ const BuildWithUs = () => {
                         </p>
                       </div>
                       <form onSubmit={handleSubmit} className="space-y-4">
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <Input
                             name="firstName"
                             value={formData.firstName}
@@ -174,7 +174,7 @@ const BuildWithUs = () => {
                           value={formData.linkedin}
                           onChange={handleChange}
                           placeholder="LinkedIn*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -184,7 +184,7 @@ const BuildWithUs = () => {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="Email*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -193,7 +193,7 @@ const BuildWithUs = () => {
                           value={formData.phone}
                           onChange={handleChange}
                           placeholder="Phone*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -202,7 +202,7 @@ const BuildWithUs = () => {
                           value={formData.city}
                           onChange={handleChange}
                           placeholder="City*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -211,7 +211,7 @@ const BuildWithUs = () => {
                           value={formData.country}
                           onChange={handleChange}
                           placeholder="Country*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -220,7 +220,7 @@ const BuildWithUs = () => {
                           value={formData.ideaName}
                           onChange={handleChange}
                           placeholder="Idea Name/One-Liner*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 
@@ -229,7 +229,7 @@ const BuildWithUs = () => {
                           value={formData.ideaStage}
                           onChange={handleChange}
                           placeholder="What stage is your idea in?*"
-                          className="bg-white/90 border-0 text-gray-900 placeholder-gray-600 rounded-lg"
+                          className="bg-gray-800 border border-gray-700 text-white placeholder-gray-400 rounded-lg focus:border-orange-500"
                           required
                         />
 

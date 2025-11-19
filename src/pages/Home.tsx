@@ -72,22 +72,20 @@ const Home = () => {
       <section className="py-20 bg-black relative overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="flex justify-start items-start gap-16 mb-12 max-w-4xl">
-            <h3 className="text-4xl font-bold text-orange-500">
-              Accelerate
-            </h3>
+            <h3 className="text-4xl font-bold text-orange-500">Accelerate</h3>
             <h3 className="text-4xl font-bold text-orange-500">Scale</h3>
             <h3 className="text-4xl font-bold text-orange-500">Impact</h3>
           </div>
           <div className="max-w-4xl">
             <p className="text-xl text-white leading-relaxed">
-              Through our AI-first decentralized agent protocol, Zynd, we co-build and fund bold
-              founders to create AI, DEPIN, and robotics ventures that redefine industries and scale
-              transformative ideas to billions.
+              Through our AI-first decentralized agent protocol, Zynd, we
+              co-build and fund bold founders to create AI, DEPIN, and robotics
+              ventures that redefine industries and scale transformative ideas
+              to billions.
             </p>
           </div>
         </div>
       </section>
-
 
       {/* Ideas to Enterprises */}
       <section className="py-16 bg-black relative overflow-hidden">
@@ -100,8 +98,10 @@ const Home = () => {
               Ideas to Enterprises
             </h2>
             <p className="text-base text-white leading-relaxed max-w-2xl">
-              The venture studio model is a powerful new approach that is redefining entrepreneurship. By combining
-              company building with funding, we accelerate timelines, iterate rapidly and break faster.
+              The venture studio model is a powerful new approach that is
+              redefining entrepreneurship. By combining company building with
+              funding, we accelerate timelines, iterate rapidly and break
+              faster.
             </p>
           </div>
 
@@ -163,23 +163,17 @@ const Home = () => {
               Zynd - The Core of Omnis
             </h2>
             <p className="text-sm text-white leading-relaxed mb-8 max-w-3xl">
-              At the heart of Omnis lies Zynd, our proprietary decentralized AI agent protocol. Zynd is the foundation of every venture we co-create, enabling real-time decision-making, dynamic regulatory adaptation, and scalable AI-native operations. Beyond technology, Zynd is a funding engine and ecosystem enabler, driving innovation with its own proprietary hackathons to uncover daring ideas and visionary founders.
+              At the heart of Omnis lies Zynd, our proprietary decentralized AI
+              agent protocol. Zynd is the foundation of every venture we
+              co-create, enabling real-time decision-making, dynamic regulatory
+              adaptation, and scalable AI-native operations. Beyond technology,
+              Zynd is a funding engine and ecosystem enabler, driving innovation
+              with its own proprietary hackathons to uncover daring ideas and
+              visionary founders.
             </p>
-          </div>
-          <div className="mt-12">
-            <div className="flex items-center gap-6">
-              <img src="/omnis_logo.png" alt="Omnis AI" className="h-6" />
-              <div className="flex gap-6 text-white text-xs">
-                <span>About</span>
-                <span>Team</span>
-                <span>Contact</span>
-                <span>Portfolio</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-
 
       <Footer />
     </div>

@@ -37,16 +37,16 @@ const Studio = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
               <div>
-                <h1 className="text-7xl md:text-8xl font-bold text-white mb-4 leading-none">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-none">
                   THE
                 </h1>
-                <h1 className="text-7xl md:text-8xl font-bold text-orange-500 mb-8 leading-none">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-orange-500 mb-8 leading-none">
                   STUDIO
                 </h1>
               </div>
             </div>
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-medium text-white">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-white">
                 From Idea to{" "}
                 <span className="text-orange-500">Population-Scale</span>{" "}
                 Company

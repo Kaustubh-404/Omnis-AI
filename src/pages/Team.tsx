@@ -102,11 +102,11 @@ const Team = () => {
               <p className="text-gray-400 text-sm font-medium tracking-wider uppercase mb-4">
                 THE TEAM
               </p>
-              <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
                 The <span className="text-orange-500">Omnis</span> Founding Collective
               </h1>
             </div>
-            <p className="text-gray-300 text-xl max-w-3xl leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl leading-relaxed">
               At Omnis, we believe world-changing ventures are built by diverse minds working as one. Our founding collective brings together finance leaders, product innovators, ecosystem builders, and capital experts—a team that acts as institutional co-founders for every venture we create.
             </p>
           </div>
@@ -125,7 +125,7 @@ const Team = () => {
                 onClick={() => setSelectedMember(member)}
               >
                 {/* Image section with overlay */}
-                <div className="h-80 relative">
+                <div className="h-64 sm:h-72 md:h-80 relative">
                   <img
                     src={member.image}
                     alt={member.name}
@@ -165,7 +165,7 @@ const Team = () => {
                       onClick={() => setSelectedMember(member)}
                     >
                       {/* Image section with overlay */}
-                      <div className="h-80 relative">
+                      <div className="h-64 sm:h-72 md:h-80 relative">
                         <img
                           src={member.image}
                           alt={member.name}
