@@ -29,7 +29,7 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex gap-4 mt-6">
               <a
-                href="https://twitter.com/omnisai"
+                href="https://x.com/omnisai_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-orange-500 hover:text-orange-400 transition-colors"
@@ -37,7 +37,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a
-                href="https://linkedin.com/company/omnis-ai"
+                href="https://www.linkedin.com/company/omnisailtd/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-orange-500 hover:text-orange-400 transition-colors"
@@ -45,7 +45,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:contact@omnisai.com"
+                href="mailto:chandan@zynd.ai"
                 className="text-orange-500 hover:text-orange-400 transition-colors"
               >
                 <Mail size={20} />
