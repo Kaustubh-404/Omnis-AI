@@ -22,8 +22,9 @@ const Footer = () => {
               <img src={footerLogo} alt="Omnis AI" className="h-8 mr-3" />
             </div>
             <div className="text-gray-400 text-sm leading-relaxed">
-              <p>13 Ambey Avas Colony, Mini Bypass</p>
-              <p>Road, Barelly, India - 243122</p>
+              <p>Unit No.302, Kumar Plaza, 3rd Floor,</p>
+              <p>Near Kalina Masjid, Kalina Kurla Road, Santacruz East,</p>
+              <p>Mumbai, Maharashtra 400029</p>
             </div>
 
             {/* Social Icons */}
